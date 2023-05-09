@@ -3,7 +3,7 @@
     height: 100vh;
 }
 .navigation{
-    position: fixed;
+
     display: flex;
     gap: 30px;
     align-items: center;
@@ -17,7 +17,7 @@
     color: #EBD8FF;
 }
 .footer{
-    position: fixed;
+
     display: flex;
     align-items: center;
     padding-left: 50px;

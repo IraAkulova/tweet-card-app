@@ -9,7 +9,6 @@ export const TweetItem = ({ card }) => {
       );
 
     const onFollowClick = () => {
-        console.log('hello')
         setIsFollowed(!isFollowed);
         localStorage.setItem(`isFollowed ${card.id}`, !isFollowed);
         if (isFollowed) {
