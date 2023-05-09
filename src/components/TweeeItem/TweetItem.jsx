@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import defaultAvatar from "../../assets/boy.png";
 import background from "../../assets/questionmark-checkmark.png";
 import css from "../TweeeItem/TweetItem.module.css";
 
