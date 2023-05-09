@@ -16,15 +16,16 @@ export const TweetList = () => {
     })
         axios
           .get(`/users/?${params}`)
-          .then((cards) => setCards(prevCards => [...prevCards, ...cards.data]))
+          .then((cards) => {
+            if (page === 1) {
+              return setCards(cards.data);
+            }
+            setCards(prevCards => [...prevCards, ...cards.data])
+          })
           .catch((error) => console.log(error));
   };
-// setImages((prevImages) => [...prevImages, ...imgs.hits]);
 
-    const buttonClickHandler = () => {
-      setPage(page + 1);
-      console.log(page);
-    };
+    const buttonClickHandler = () => setPage(page + 1);
 
     useEffect(() => fetchUsers(page), [page]);
   return (
