@@ -6,15 +6,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <BrowserRouter basename="/test-tweet-card">
     <App />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
 );
 
 reportWebVitals(sendToVercelAnalytics);
