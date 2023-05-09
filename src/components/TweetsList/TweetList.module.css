@@ -1,8 +1,23 @@
 .grid{
     margin: 48px;
+    margin-top: 20px;
     display: flex;
     gap: 48px;
     flex-wrap: wrap;
+}
+.backBtn{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #373737;
 }
 .button{
     margin-top: 10px;
