@@ -16,9 +16,11 @@ export const TweetList = () => {
     })
         axios
           .get(`/users/?${params}`)
-          .then((cards) => setCards(cards.data))
+          .then((cards) => setCards(prevCards => [...prevCards, ...cards.data]))
           .catch((error) => console.log(error));
   };
+// setImages((prevImages) => [...prevImages, ...imgs.hits]);
+
     const buttonClickHandler = () => {
       setPage(page + 1);
       console.log(page);
